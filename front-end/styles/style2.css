@@ -15,11 +15,14 @@ svg {
     background-color: black;
 }
 
-// #svg3454 {
-// 	background-color: black;
-// 	transform:
-// 	-webkit-animation: spinner 10s infinite linear;
-// }
+#svg3454 {
+	background-color: black;
+	font-size: 18px;
+	fill: white;
+	transform:
+	-webkit-animation: spinner 10s infinite linear;
+
+}
 
 #layer1{
 	
