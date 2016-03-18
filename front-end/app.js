@@ -7,7 +7,17 @@ var data = [{
     "impact": "Likely pathogenic\nUnknown, Homozygous",
     "alleleFreq": "21%",
     "summary": "This common noncoding genetic variant has an allele frequency of ~30% and is associated with an increased risk of hypertension. If ~25% of non-carriers have hypertension, Bonnardeaux et al's data predict ~4% increased risk of hypertension per copy of this variant. This SNP is in the 3' noncoding region of the AGTR1 transcript (angiotensin II type 1 receptor), also known as AT2R1 or AT1R, which is a target of hypertension drugs."
-}]
+},
+{
+        "variant": {
+            "href": "http://evidence.pgp-hms.org/MBL2-R52C",
+            "text": "MBL2-R52C"
+        },
+        "clinicalImportance": "Low",
+        "impact": "Likely pathogenic\nRecessive, Carrier (Heterozygous)",
+        "alleleFreq": "4.9%",
+        "summary": "This variant is associated with mannose binding protein deficiency which leads to impaired complement system immune response to mannose-rich pathogens. Patients homozygous for this allele or compound heterozygous are likely to have increased susceptibility to infection, but Hellemann et al. report heterosis for intensive care outcomes in heterozygous subjects. The wild-type version of this gene is known as variant allele A, while this is called variant allele D. See G54D (variant B) and G57E (variant C)."
+    }]
 var data2 = [{
         "variant": {
             "href": "http://evidence.pgp-hms.org/MBL2-R52C",
@@ -262,13 +272,124 @@ svg.selectAll("circle").data(data2).enter().append("circle").attr({
     var nodeSelection = d3.select(this).style({
         opacity: ".5"
     });
-}).on("click", function(d) {
-    console.log(d.summary)
-    var infoNode = d3.select(this)
 })
-svg.selectAll("text").data(data).enter().append("text").style("color", "white").text(function(d) {
-    return d.summary
-}).attr({
-    x: 100,
-    y: 100
-}).style("color", "white")
+// .on("click", function(d){
+//     d3.select(this)
+//     .append("text")
+//     .attr({
+//         x: 100,
+//         y: function(d,i){
+//             return 100*i + 80
+//         }
+//     }).text(function(d){
+//         console.log(d.summary)
+//         return d.summary
+//     })
+//     .style("fill", "white")
+// })
+
+// .on("click", function(d){
+//     d3.select(this).append("text").attr({
+//         x:100,
+//         y:function(d,i){
+//             return 80 * i + 80
+//         }
+//     }).text(function(d){
+//         console.log(d.summary)
+//         return d.summary
+//     })
+// })
+
+// svg.append("g").selectAll("g").data(data2).enter().append("rect")
+//     .attr("x", 100)
+//     .attr("y", 200)
+//     .attr("width", 200)
+//     .attr("height", 200)
+//     .style("fill", "red")
+//     .on("click", function(d){
+//         d3.select(this).text(function(d){
+//             return d.summary
+//             console.log("ehllo")
+//         }).style("fill", "white")
+//         .attr({
+//             x:400,
+//             y: 400
+//         })
+        
+//     })
+
+var svg = d3.select("#svg3454");
+var bar = svg.selectAll("g")
+    .data(data2)
+    .enter().append("g")
+    .attr("transform", function(d, i) { return "translate(100,100)"; });
+
+    bar.append("circle")
+    .attr({
+    r: 12,
+    cx: function(d, i) {
+        if (i % 2 === 0) {
+            return 415
+        } else {
+            return 322
+        }
+    },
+    cy: function(d, i) {
+        return i * 75 + 74
+    },
+    class: "gene"
+}).style("fill", function(d) {
+    if (d.clinicalImportance == "Low") {
+        return "green"
+    } else if (d.clinicalImportance == "Moderate") {
+        return "yellow"
+    } else if (d.clinicalImportance == "High") {
+        return "red"
+    }
+}).style("opacity", .5).on('mouseover', function(d) {
+    var nodeSelection = d3.select(this).style({
+        opacity: '1.0'
+    });
+   
+})
+    .on("mouseover",function(){
+        d3.select(this.nextSibling)
+            .attr("opacity", "1")
+    })
+    .on("mouseout",function(){
+        d3.select(this.nextSibling)
+            .attr("opacity", "0")
+    })
+
+bar.append("text")
+    .attr("dy", "50px")
+    .attr("dx", "-100px")
+    .attr("opacity", "0")
+    .text(function(d) { return d.summary; })
+    .style("fill", "white");
+
+// svg.selectAll("text").data(data2).enter()
+// .append("text").text(function(d) {
+//     return d.summary
+// }).attr({
+//     x: 100,
+//     y: function(d,i){
+//         return 100 * i + 100
+//     }
+// }).style("fill", "white")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
