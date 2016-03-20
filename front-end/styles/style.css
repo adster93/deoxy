@@ -1,36 +1,12 @@
 body {
-  background-color: black; }
-
-.helpBox {
-  color: white;
-  font-size: 2em;
-  letter-spacing: 7px;
-  margin-top: 30px;
-  margin-left: 135px;
-  text-align: center; }
-
-#dnaTag {
-  color: #5FF7FA; }
-
-.svgGeneContainer {
-  display: flex;
-  justify-content: flex-start; }
-
-.variantSummary {
-  height: 750px;
-  width: 700px;
-  font-size: 1.8em;
-  margin-top: 85px;
-  border: 2px solid #5FF7FA;
-  padding: 20px;
-  opacity: .2; }
+  background-color: #FFFFFF; }
 
 svg {
   border: 1px solid black;
   background-color: black; }
 
 #svg3454 {
-  background-color: black; }
+  background-color: white; }
 
 #layer1 {
   perspective: 600px; }
@@ -59,4 +35,4 @@ svg {
   height: 50px;
   width: 200px; }
 
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style.css.map */

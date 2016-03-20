@@ -127,106 +127,97 @@ var data2 = [{
         "alleleFreq": "9.3%",
         "summary": "Causes Adenosine Deaminase Deficiency in a recessive manner. Most of the time individuals do not report symptoms, but when symptoms do exist they to be post-exercise symptoms of muscle weakness, muscle pain, and getting tired more quickly."
     },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/CETP-A390P",
-    //     "text": "CETP-A390P"
-    //   },
-    //   "clinicalImportance": "Low",
-    //   "impact": "Likely pathogenic\nUnknown, Heterozygous",
-    //   "alleleFreq": "3.9%",
-    //   "summary": "This variant is associated with slightly lower HDL (good) cholesterol, although it has a negligible effect (around 2 mg/dl)."
-    // },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/AMPD1-Q12X",
-    //     "text": "AMPD1-Q12X"
-    //   },
-    //   "clinicalImportance": "Low",
-    //   "impact": "Likely pathogenic\nRecessive, Homozygous",
-    //   "alleleFreq": "9.3%",
-    //   "summary": "Causes Adenosine Deaminase Deficiency in a recessive manner. Most of the time individuals do not report symptoms, but when symptoms do exist they to be post-exercise symptoms of muscle weakness, muscle pain, and getting tired more quickly."
-    // },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/PRPH-D141Y",
-    //     "text": "PRPH-D141Y"
-    //   },
-    //   "clinicalImportance": "High",
-    //   "impact": "Uncertain pathogenic\nRecessive, Carrier (Heterozygous)",
-    //   "alleleFreq": "0.37%",
-    //   "summary": "Hypothesized to cause ALS (or increased susceptibility) in a recessive manner, but this is based on a single observation and may lack statistical significance. The mutant protein appears to form abnormal aggregates."
-    // },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/APC-E1317Q",
-    //     "text": "APC-E1317Q"
-    //   },
-    //   "clinicalImportance": "Moderate",
-    //   "impact": "Uncertain pathogenic\nDominant, Heterozygous",
-    //   "alleleFreq": "0.88%",
-    //   "summary": "This rare variant has been hypothesized to increase risk of colon cancer. Later studies have contradicted this, finding no significant enrichment and concluding the variant does not increase risk."
-    // },  
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/ATM-S49C",
-    //     "text": "ATM-S49C"
-    //   },
-    //   "clinicalImportance": "Low",
-    //   "impact": "Uncertain pathogenic\nComplex/Other, Heterozygous",
-    //   "alleleFreq": "1.00%",
-    //   "summary": "May be associated with a small increased risk of breast cancer."
-    // },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/HFE-S65C",
-    //     "text": "HFE-S65C"
-    //   },
-    //   "clinicalImportance": "Low",
-    //   "impact": "Uncertain pathogenic\nRecessive, Carrier (Heterozygous)",
-    //   "alleleFreq": "0.98%",
-    //   "summary": "A \"mild\" variant which may cause a very small increased risk of iron overload (hereditary hemachromatosis)."
-    // },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/APOE-C130R",
-    //     "text": "APOE-C130R"
-    //   },
-    //   "clinicalImportance": "High",
-    //   "impact": "Well-established pathogenic\nComplex/Other, Heterozygous",
-    //   "alleleFreq": "14%",
-    //   "summary": "This is generally known as the ApoE4 allele of ApoE and is associated with increased risk of Alzheimer's. 20-25% of individuals are heterozygous for this variant, and 1-2% are homozygous. Data from Khachaturian et al. suggests an average 7% of all individuals developed Alzheimer's by the age of 80; when this is split by ApoE4 status: 10% of ApoE4 heterozygotes (3% increased attributable risk), 40% of ApoE4 homozygotes (33% increased attributable risk), and 5% of non-carriers (2% decreased attributable risk). Notably, their model suggests 70-75% of people would eventually develop Alzheimer's by the age of 100 regardless of ApoE4 genotype (and 25-30% are resistant, regardless of genotype), but that ApoE4 variants shift the disease onset to occur significantly earlier (4 years earlier for heterozygous carriers, 13 years for homozygotes)."
-    // },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/COL9A3-R103W",
-    //     "text": "COL9A3-R103W"
-    //   },
-    //   "clinicalImportance": "Moderate",
-    //   "impact": "Likely pathogenic\nDominant, Heterozygous",
-    //   "alleleFreq": "4.8%",
-    //   "summary": "Carriers of this collagen variant are associated with having a significantly increased risk of lumbar disc disease (~11% total risk compared to a typical risk of 4%)."
-    // },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/MATN3-T303M",
-    //     "text": "MATN3-T303M"
-    //   },
-    //   "clinicalImportance": "Moderate",
-    //   "impact": "Uncertain pathogenic\nUnknown, Heterozygous",
-    //   "alleleFreq": "1.1%",
-    //   "summary": "An Iceland study implicated this in causing increased osteoarthritis -- in particular, hand osteoarthritis. Because the variant is rare, the statistical significance of observations is weak. The authors estimate that individuals heterozygous for this variant have a 2.1-fold risk for hand osteoarthritis."
-    // },
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/APOE-C130R",
-    //     "text": "APOE-C130R"
-    //   },
-    //   "clinicalImportance": "High",
-    //   "impact": "Well-established pathogenic\nComplex/Other, Heterozygous",
-    //   "alleleFreq": "14%",
-    //   "summary": "This is generally known as the ApoE4 allele of ApoE and is associated with increased risk of Alzheimer's. 20-25% of individuals are heterozygous for this variant, and 1-2% are homozygous. Data from Khachaturian et al. suggests an average 7% of all individuals developed Alzheimer's by the age of 80; when this is split by ApoE4 status: 10% of ApoE4 heterozygotes (3% increased attributable risk), 40% of ApoE4 homozygotes (33% increased attributable risk), and 5% of non-carriers (2% decreased attributable risk). Notably, their model suggests 70-75% of people would eventually develop Alzheimer's by the age of 100 regardless of ApoE4 genotype (and 25-30% are resistant, regardless of genotype), but that ApoE4 variants shift the disease onset to occur significantly earlier (4 years earlier for heterozygous carriers, 13 years for homozygotes)."
-    // },
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/CETP-A390P",
+        "text": "CETP-A390P"
+      },
+      "clinicalImportance": "Low",
+      "impact": "Likely pathogenic\nUnknown, Heterozygous",
+      "alleleFreq": "3.9%",
+      "summary": "This variant is associated with slightly lower HDL (good) cholesterol, although it has a negligible effect (around 2 mg/dl)."
+    },
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/AMPD1-Q12X",
+        "text": "AMPD1-Q12X"
+      },
+      "clinicalImportance": "Low",
+      "impact": "Likely pathogenic\nRecessive, Homozygous",
+      "alleleFreq": "9.3%",
+      "summary": "Causes Adenosine Deaminase Deficiency in a recessive manner. Most of the time individuals do not report symptoms, but when symptoms do exist they to be post-exercise symptoms of muscle weakness, muscle pain, and getting tired more quickly."
+    },
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/PRPH-D141Y",
+        "text": "PRPH-D141Y"
+      },
+      "clinicalImportance": "High",
+      "impact": "Uncertain pathogenic\nRecessive, Carrier (Heterozygous)",
+      "alleleFreq": "0.37%",
+      "summary": "Hypothesized to cause ALS (or increased susceptibility) in a recessive manner, but this is based on a single observation and may lack statistical significance. The mutant protein appears to form abnormal aggregates."
+    },
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/APC-E1317Q",
+        "text": "APC-E1317Q"
+      },
+      "clinicalImportance": "Moderate",
+      "impact": "Uncertain pathogenic\nDominant, Heterozygous",
+      "alleleFreq": "0.88%",
+      "summary": "This rare variant has been hypothesized to increase risk of colon cancer. Later studies have contradicted this, finding no significant enrichment and concluding the variant does not increase risk."
+    },  
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/ATM-S49C",
+        "text": "ATM-S49C"
+      },
+      "clinicalImportance": "Low",
+      "impact": "Uncertain pathogenic\nComplex/Other, Heterozygous",
+      "alleleFreq": "1.00%",
+      "summary": "May be associated with a small increased risk of breast cancer."
+    },
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/HFE-S65C",
+        "text": "HFE-S65C"
+      },
+      "clinicalImportance": "Low",
+      "impact": "Uncertain pathogenic\nRecessive, Carrier (Heterozygous)",
+      "alleleFreq": "0.98%",
+      "summary": "A \"mild\" variant which may cause a very small increased risk of iron overload (hereditary hemachromatosis)."
+    },
+    
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/COL9A3-R103W",
+        "text": "COL9A3-R103W"
+      },
+      "clinicalImportance": "Moderate",
+      "impact": "Likely pathogenic\nDominant, Heterozygous",
+      "alleleFreq": "4.8%",
+      "summary": "Carriers of this collagen variant are associated with having a significantly increased risk of lumbar disc disease (~11% total risk compared to a typical risk of 4%)."
+    },
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/MATN3-T303M",
+        "text": "MATN3-T303M"
+      },
+      "clinicalImportance": "Moderate",
+      "impact": "Uncertain pathogenic\nUnknown, Heterozygous",
+      "alleleFreq": "1.1%",
+      "summary": "An Iceland study implicated this in causing increased osteoarthritis -- in particular, hand osteoarthritis. Because the variant is rare, the statistical significance of observations is weak. The authors estimate that individuals heterozygous for this variant have a 2.1-fold risk for hand osteoarthritis."
+    },
+    {
+      "variant": {
+        "href": "http://evidence.pgp-hms.org/APOE-C130R",
+        "text": "APOE-C130R"
+      },
+      "clinicalImportance": "High",
+      "impact": "Well-established pathogenic\nComplex/Other, Heterozygous",
+      "alleleFreq": "14%",
+      "summary": "This is generally known as the ApoE4 allele of ApoE and is associated with increased risk of Alzheimer's. 20-25% of individuals are heterozygous for this variant, and 1-2% are homozygous. Data from Khachaturian et al. suggests an average 7% of all individuals developed Alzheimer's by the age of 80; when this is split by ApoE4 status: 10% of ApoE4 heterozygotes (3% increased attributable risk), 40% of ApoE4 homozygotes (33% increased attributable risk), and 5% of non-carriers (2% decreased attributable risk). Notably, their model suggests 70-75% of people would eventually develop Alzheimer's by the age of 100 regardless of ApoE4 genotype (and 25-30% are resistant, regardless of genotype), but that ApoE4 variants shift the disease onset to occur significantly earlier (4 years earlier for heterozygous carriers, 13 years for homozygotes)."
+    }
     // {
     //   "variant": {
     //     "href": "http://evidence.pgp-hms.org/COL9A3-R103W",
@@ -239,40 +230,40 @@ var data2 = [{
     // },
     // {
 ]
-var svg = d3.select("#svg3454")
-svg.selectAll("circle").data(data2).enter().append("circle").attr({
-    r: 12,
-    cx: function(d, i) {
-        if (i % 2 === 0) {
-            return 415
-        } else {
-            return 322
-        }
-    },
-    cy: function(d, i) {
-        return i * 75 + 74
-    },
-    class: "gene"
-}).style("fill", function(d) {
-    if (d.clinicalImportance == "Low") {
-        return "green"
-    } else if (d.clinicalImportance == "Moderate") {
-        return "yellow"
-    } else if (d.clinicalImportance == "High") {
-        return "red"
-    }
-}).style("opacity", .5).on('mouseover', function(d) {
-    var nodeSelection = d3.select(this).style({
-        opacity: '0.8'
-    });
-    nodeSelection.select("text").style({
-        opacity: '1.0'
-    });
-}).on('mouseout', function(d) {
-    var nodeSelection = d3.select(this).style({
-        opacity: ".5"
-    });
-})
+// var svg = d3.select("#svg3454")
+// svg.selectAll("circle").data(data2).enter().append("circle").attr({
+//     r: 12,
+//     cx: function(d, i) {
+//         if (i % 2 === 0) {
+//             return 415
+//         } else {
+//             return 322
+//         }
+//     },
+//     cy: function(d, i) {
+//         return i * 75 + 74
+//     },
+//     class: "gene"
+// }).style("fill", function(d) {
+//     if (d.clinicalImportance == "Low") {
+//         return "green"
+//     } else if (d.clinicalImportance == "Moderate") {
+//         return "yellow"
+//     } else if (d.clinicalImportance == "High") {
+//         return "red"
+//     }
+// }).style("opacity", .5).on('mouseover', function(d) {
+//     var nodeSelection = d3.select(this).style({
+//         opacity: '0.8'
+//     });
+//     nodeSelection.select("text").style({
+//         opacity: '1.0'
+//     });
+// }).on('mouseout', function(d) {
+//     var nodeSelection = d3.select(this).style({
+//         opacity: ".5"
+//     });
+// })
 // .on("click", function(d){
 //     d3.select(this)
 //     .append("text")
@@ -327,19 +318,24 @@ var geneSummary = svg.selectAll("g")
     .attr({
     r: 12,
     cx: function(d, i) {
-        if (i % 2 === 0) {
-            return 415
+        if (i < 12) {
+            return 320
         } else {
-            return 322
+            return 220
         }
     },
     cy: function(d, i) {
-        return i * 75 + 74
+        if(i>=12){
+        return (i-12) * 72 + 65
+        }
+        else {
+        return i * 75 - 170
+        }
     },
     class: "gene"
 }).style("fill", function(d) {
     if (d.clinicalImportance == "Low") {
-        return "green"
+        return "#00FF19"
     } else if (d.clinicalImportance == "Moderate") {
         return "yellow"
     } else if (d.clinicalImportance == "High") {
@@ -347,21 +343,41 @@ var geneSummary = svg.selectAll("g")
     }
 }).style("opacity", .5).on('mouseover', function(d) {
     var nodeSelection = d3.select(this).style({
-        opacity: '1.0'
+        opacity: '1'
+    }).on('mouseout', function(d){
+        var nodeSelection = d3.select(this).style({
+            opacity: '.5'
+        })
     });
    
-})
-    .on("mouseover",function(d){
+}).on("click",function(d){
         console.log(d)
-        d3.select(".geneStuff")
-            .attr("opacity", "1")
+        d3.select(".variantSummary")
+            .style("opacity", "1")
             .text(function(){return d.summary})
-            .style("color", "red")
+            .style("color", function() {
+    if (d.clinicalImportance == "Low") {
+        return "#00FF19"
+    } else if (d.clinicalImportance == "Moderate") {
+        return "yellow"
+    } else if (d.clinicalImportance == "High") {
+        return "#FF0006"
+    }
     })
-    .on("mouseout",function(){
-        d3.select(this.nextSibling)
-            .attr("opacity", "0")
-    })
+})
+
+function geneName (){
+    d3.select(".variantSummary")
+    .data(data2)
+    .enter()
+    .text(function(d){
+        console.log(d)
+        return d.variant.text})
+}
+function geneSummary (){
+    d3.select(".variantSummary")
+    .text(function(d){return d.summary})
+}
 
 // geneSummary.append("text")
 //     .attr("dy", "50px")

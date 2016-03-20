@@ -1,8 +1,39 @@
 body {
-	display: flex;
-	flex-wrap: wrap;
 	background-color: black;
 }
+
+.helpBox {
+	color: white;
+	font-size: 2em;
+	letter-spacing: 7px;
+	margin-top: 30px;
+	margin-left: 135px;
+	text-align: center;
+}
+
+#dnaTag {
+	color: #5FF7FA;
+}
+
+.svgGeneContainer {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.variantSummary {
+
+	height: 750px;
+	width: 700px;
+	font-size: 1.8em;
+	margin-top: 85px;
+	border: 2px solid #5FF7FA;
+	padding: 20px;
+	opacity: .2;
+}
+
+
+
+
 
 // #geneInfo{
 // 	border: 3px solid #60EEFF;

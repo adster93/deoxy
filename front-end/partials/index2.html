@@ -2,6 +2,12 @@
 <html>
 <head>
 <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../styles/style1.css">
+  <meta charset="UTF-8">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js
 "></script>
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.1/d3plus.full.js"></script> -->
@@ -11,9 +17,12 @@
   <title></title>
 </head>
 <body>
+<div class="helpBox">
+  click a gene on the <span id="dnaTag">dna</span> for more info
+</div>
+<div class="svgGeneContainer">
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -521,9 +530,10 @@
     </g>
   </g>
 </svg>
-<div class="geneStuff">
-  
+<div class="variantSummary">
 </div>
+</div>
+
 <!-- <object data="dnasvg.svg" type="image/svg+xml">
  -->
  <script type="text/javascript" src="../app.js"></script>
