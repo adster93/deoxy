@@ -317,14 +317,13 @@ svg.selectAll("circle").data(data2).enter().append("circle").attr({
 //         })
         
 //     })
-
 var svg = d3.select("#svg3454");
-var bar = svg.selectAll("g")
+var geneSummary = svg.selectAll("g")
     .data(data2)
     .enter().append("g")
     .attr("transform", function(d, i) { return "translate(100,100)"; });
 
-    bar.append("circle")
+    geneSummary.append("circle")
     .attr({
     r: 12,
     cx: function(d, i) {
@@ -352,21 +351,34 @@ var bar = svg.selectAll("g")
     });
    
 })
-    .on("mouseover",function(){
-        d3.select(this.nextSibling)
+    .on("mouseover",function(d){
+        console.log(d)
+        d3.select(".geneStuff")
             .attr("opacity", "1")
+            .text(function(){return d.summary})
+            .style("color", "red")
     })
     .on("mouseout",function(){
         d3.select(this.nextSibling)
             .attr("opacity", "0")
     })
 
-bar.append("text")
-    .attr("dy", "50px")
-    .attr("dx", "-100px")
-    .attr("opacity", "0")
-    .text(function(d) { return d.summary; })
-    .style("fill", "white");
+// geneSummary.append("text")
+//     .attr("dy", "50px")
+//     .attr("dx", "-100px")
+//     .attr("opacity", "0")
+//     .text(function(d) { return d.summary; })
+//     .style({
+//         fill: "white",
+//         "font-size": "24px",
+//         width: "200px"
+
+//     })
+
+// d3.select()
+
+
+
 
 // svg.selectAll("text").data(data2).enter()
 // .append("text").text(function(d) {
@@ -377,8 +389,10 @@ bar.append("text")
 //         return 100 * i + 100
 //     }
 // }).style("fill", "white")
-
-
+ // d3plus.textwrap()
+ //    .container(d3.select("text"))
+ //    .resize(true)
+ //    .draw();
 
 
 

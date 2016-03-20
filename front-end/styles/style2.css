@@ -1,6 +1,7 @@
 body {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: black; }
 
 svg {
   border: 1px solid black;
@@ -31,5 +32,9 @@ svg {
     -webkit-transform: scale(2, 2) rotateX(360deg); } }
 .white {
   color: white; }
+
+.summaryBox {
+  height: 50px;
+  width: 200px; }
 
 /*# sourceMappingURL=style2.css.map */
