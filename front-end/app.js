@@ -366,18 +366,34 @@ var geneSummary = svg.selectAll("g")
     })
 })
 
-function geneName (){
-    d3.select(".variantSummary")
-    .data(data2)
-    .enter()
-    .text(function(d){
-        console.log(d)
-        return d.variant.text})
-}
-function geneSummary (){
-    d3.select(".variantSummary")
-    .text(function(d){return d.summary})
-}
+// $.get('http://localhost:3000/api', function(data){
+//   console.log(data)
+// })
+
+// $.post('http://localhost:3000/api/males', {
+//    "name" : "hu5AE84D"
+// }, function(data){
+
+//   console.log(data)
+// } )
+
+// d3.json('http://localhost:3000/api', function(err, data){
+//   console.log(data)
+// })
+
+// d3.json("http://localhost:3000/api/males")
+//     .header("Content-Type", "application/x-www-form-urlencoded")
+//     .post(JSON.stringify("name" : "hu5AE84D"}), function(error, data) {
+//       console.log(data)
+//     });
+
+d3.json("http://localhost:3000/api/males")
+    .header("Content-Type", "application/json")
+    .post(JSON.stringify({name : "Male"}), function(error, data) {
+      console.log(data)
+    });
+
+// $.post()
 
 // geneSummary.append("text")
 //     .attr("dy", "50px")
