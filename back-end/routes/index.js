@@ -17,7 +17,7 @@ router.post('/api/males', function(req,res){
 	// genes.find({}, function (err, docs){
 	// 	res.json(docs)
 	// });
-	genes.find({"sex": req.body.sex}, function(err, docs){
+	genes.find({"name": req.body.name}, function(err, docs){
 		console.log(docs)
 		res.send(docs)
 	})

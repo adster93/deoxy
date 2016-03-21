@@ -59,4 +59,10 @@ svg {
   height: 50px;
   width: 200px; }
 
+  #dummyData {
+    height: 1000px;
+    width: 500px;
+    background-color: white;
+  }
+
 /*# sourceMappingURL=style2.css.map */
