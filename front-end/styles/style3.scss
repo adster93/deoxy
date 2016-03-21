@@ -1,8 +1,10 @@
 body {
   background-color: black; }
 
-#dnaTag {
-  color: #5FF7FA; }
+.mainContainer {
+  display: flex;
+  align-content: space-around;
+}
 
 .svgGeneContainer {
   display: flex;
@@ -15,7 +17,13 @@ body {
   margin-top: 80px;
   border: 2px solid #5FF7FA;
   padding: 20px;
-  opacity: 0; }
+  opacity: 0; 
+  margin-left: 100px;
+}
+.variantSummary2{
+  color: white;
+  margin-top: 80px;
+}
 
 svg {
   border: 1px solid black;

@@ -1,6 +1,18 @@
+//grab from server name information
+
 var sampleId = location.search.split("=")[1]
 d3.json("http://localhost:3000/api/sample/" + sampleId, function(error, data) {
       var variantData = data[0].variants
+      console.log(data)
+      var patientDescription = []
+      patientDescription.push(data[0].name)
+      patientDescription.push(data[0].bloodType)
+      patientDescription.push(data[0].dateOfBirth)
+      patientDescription.push(data[0].height)
+      patientDescription.push(data[0].race)
+      patientDescription.push(data[0].sex)
+      console.log(patientDescription)
+      // patientDescription.push(dat)
       console.log(variantData)
       // console.log(variantData.length)
       fakeData = d3.select('#svg3')
@@ -55,6 +67,7 @@ d3.json("http://localhost:3000/api/sample/" + sampleId, function(error, data) {
     });
    
 }).on("click",function(d){
+        d3.selectAll(".variantSummary2 > div").remove()
         d3.select(".variantSummary")
             .style("opacity", "1")
             .text(function(){return d.summary})
@@ -67,5 +80,24 @@ d3.json("http://localhost:3000/api/sample/" + sampleId, function(error, data) {
         return "#FF0006"
     }
     })
+
+            d3.select(".variantSummary2")
+            .selectAll("text")
+            .data(patientDescription)
+            .enter()
+            .append("div")
+            .style("opacity", "1")
+            .text(function(d){return d})
+            .style("color", function() {
+    if (d.importance == "Low") {
+        return "#00FF19"
+    } else if (d.importance == "Moderate") {
+        return "yellow"
+    } else if (d.importance == "High") {
+        return "#FF0006"
+    }
+    })
+
+
 })
 })
