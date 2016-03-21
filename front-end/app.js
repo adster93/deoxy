@@ -1,23 +1,3 @@
-var data = [{
-    "variant": {
-        "href": "http://evidence.pgp-hms.org/rs5186",
-        "text": "rs5186"
-    },
-    "clinicalImportance": "Low",
-    "impact": "Likely pathogenic\nUnknown, Homozygous",
-    "alleleFreq": "21%",
-    "summary": "This common noncoding genetic variant has an allele frequency of ~30% and is associated with an increased risk of hypertension. If ~25% of non-carriers have hypertension, Bonnardeaux et al's data predict ~4% increased risk of hypertension per copy of this variant. This SNP is in the 3' noncoding region of the AGTR1 transcript (angiotensin II type 1 receptor), also known as AT2R1 or AT1R, which is a target of hypertension drugs."
-},
-{
-        "variant": {
-            "href": "http://evidence.pgp-hms.org/MBL2-R52C",
-            "text": "MBL2-R52C"
-        },
-        "clinicalImportance": "Low",
-        "impact": "Likely pathogenic\nRecessive, Carrier (Heterozygous)",
-        "alleleFreq": "4.9%",
-        "summary": "This variant is associated with mannose binding protein deficiency which leads to impaired complement system immune response to mannose-rich pathogens. Patients homozygous for this allele or compound heterozygous are likely to have increased susceptibility to infection, but Hellemann et al. report heterosis for intensive care outcomes in heterozygous subjects. The wild-type version of this gene is known as variant allele A, while this is called variant allele D. See G54D (variant B) and G57E (variant C)."
-    }]
 var data2 = [{
         "variant": {
             "href": "http://evidence.pgp-hms.org/MBL2-R52C",
@@ -218,17 +198,6 @@ var data2 = [{
       "alleleFreq": "14%",
       "summary": "This is generally known as the ApoE4 allele of ApoE and is associated with increased risk of Alzheimer's. 20-25% of individuals are heterozygous for this variant, and 1-2% are homozygous. Data from Khachaturian et al. suggests an average 7% of all individuals developed Alzheimer's by the age of 80; when this is split by ApoE4 status: 10% of ApoE4 heterozygotes (3% increased attributable risk), 40% of ApoE4 homozygotes (33% increased attributable risk), and 5% of non-carriers (2% decreased attributable risk). Notably, their model suggests 70-75% of people would eventually develop Alzheimer's by the age of 100 regardless of ApoE4 genotype (and 25-30% are resistant, regardless of genotype), but that ApoE4 variants shift the disease onset to occur significantly earlier (4 years earlier for heterozygous carriers, 13 years for homozygotes)."
     }
-    // {
-    //   "variant": {
-    //     "href": "http://evidence.pgp-hms.org/COL9A3-R103W",
-    //     "text": "COL9A3-R103W"
-    //   },
-    //   "clinicalImportance": "Moderate",
-    //   "impact": "Likely pathogenic\nDominant, Heterozygous",
-    //   "alleleFreq": "4.8%",
-    //   "summary": "Carriers of this collagen variant are associated with having a significantly increased risk of lumbar disc disease (~11% total risk compared to a typical risk of 4%)."
-    // },
-    // {
 ]
 // var svg = d3.select("#svg3454")
 // svg.selectAll("circle").data(data2).enter().append("circle").attr({
