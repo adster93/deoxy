@@ -4,6 +4,7 @@ d3.json('http://localhost:3000/api/samples', function(err, data){
   .enter()
   .append("button")
   .attr("class", "participant")
+  .attr("class", "buttonPulse")
   .text(function(d){
   	return d.name
   })

@@ -21,7 +21,8 @@ body {
 
 .variantSummary2 {
   color: white;
-  margin-top: 80px; }
+  margin-top: 80px;
+  font-size: 2em; }
 
 svg {
   border: 1px solid black;
