@@ -1,6 +1,5 @@
-d3.json("http://localhost:3000/api/males")
-    .header("Content-Type", "application/json")
-    .post(JSON.stringify({name : "hu5AE84D"}), function(error, data) {
+var sampleId = location.search.split("=")[1]
+d3.json("http://localhost:3000/api/sample/" + sampleId, function(error, data) {
       var variantData = data[0].variants
       console.log(variantData)
       // console.log(variantData.length)
@@ -12,7 +11,6 @@ d3.json("http://localhost:3000/api/males")
       .attr({
    r: 10,
     cx: function(d, i) {
-      console.log(i)
         if (i < 12) {
             return 420
         } else if (i >= 12 && i <= 23) {
@@ -57,7 +55,6 @@ d3.json("http://localhost:3000/api/males")
     });
    
 }).on("click",function(d){
-        console.log(d)
         d3.select(".variantSummary")
             .style("opacity", "1")
             .text(function(){return d.summary})

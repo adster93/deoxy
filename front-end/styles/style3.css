@@ -21,4 +21,11 @@ svg {
   border: 1px solid black;
   background-color: black; }
 
+.participant {
+  height: 80px;
+  width: 150px;
+  color: #49FEFF;
+  border: 1px solid #49FEFF;
+  font-size: 20px;
+}
 /*# sourceMappingURL=style3.css.map */

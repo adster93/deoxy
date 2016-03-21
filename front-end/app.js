@@ -356,36 +356,36 @@ var geneSummary = svg.selectAll("g")
 //       console.log(data)
 //     });
 
-d3.json("http://localhost:3000/api/males")
-    .header("Content-Type", "application/json")
-    .post(JSON.stringify({name : "hu5AE84D"}), function(error, data) {
-      var variantData = data[0].variants
-      console.log(variantData)
-      console.log(variantData.length)
-      fakeData = d3.select('#svg2')
-      fakeData.selectAll("circle")
-      .data(variantData)
-      .enter()
-      .append("circle")
-      .attr({
-    r: 10,
-    cx: function(d, i) {
-        return 100
-    },
-    cy: function(d, i) {
-        return 5 * (i + 50)
-    }
-}).style("fill", function(variantData) {
-    console.log(variantData.importance)
-    if (variantData.importance == "Low") {
-        return "#00FF19"
-    } else if (variantData.importance == "Moderate") {
-        return "yellow"
-    } else if (variantData.importance == "High")  {
-        return "#FF0006"
-    }
-    })
-})
+// d3.json("http://localhost:3000/api/males")
+//     .header("Content-Type", "application/json")
+//     .post(JSON.stringify({name : "hu5AE84D"}), function(error, data) {
+//       var variantData = data[0].variants
+//       console.log(variantData)
+//       console.log(variantData.length)
+//       fakeData = d3.select('#svg2')
+//       fakeData.selectAll("circle")
+//       .data(variantData)
+//       .enter()
+//       .append("circle")
+//       .attr({
+//     r: 10,
+//     cx: function(d, i) {
+//         return 100
+//     },
+//     cy: function(d, i) {
+//         return 5 * (i + 50)
+//     }
+// }).style("fill", function(variantData) {
+//     console.log(variantData.importance)
+//     if (variantData.importance == "Low") {
+//         return "#00FF19"
+//     } else if (variantData.importance == "Moderate") {
+//         return "yellow"
+//     } else if (variantData.importance == "High")  {
+//         return "#FF0006"
+//     }
+//     })
+// })
 
 // $.post()
 
