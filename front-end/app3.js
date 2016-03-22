@@ -21,7 +21,7 @@ d3.json('http://localhost:3000/api/samples', function(err, data){
  //    	console.log(data)
  //    	console.log(data)
  //    })
- window.location.assign("http://localhost:8081/index3.html?sample=" + d.name)
+ window.location.assign("index3.html?sample=" + d.name)
 })
 })
 

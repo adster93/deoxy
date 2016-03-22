@@ -1,7 +1,7 @@
 var express = require('express');
 var url = require('url');
 var router = express.Router();
-var db = require('monk')('localhost/deoxy');
+var db = require('monk')(process.env.MONGO_URI || 'localhost/deoxy');
 var genes = db.get('genes');
 genes.index("name")
 
