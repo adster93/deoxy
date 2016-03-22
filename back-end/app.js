@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override')
+var cors = require('cors')
 var db = require('monk')(process.env.MONGO_URI || 'localhost/deoxy');
 var genes = db.get('genes');
 
@@ -19,6 +20,7 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -26,12 +28,12 @@ app.use(methodOverride('X-HTTP-Method-Override'))
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../front-end')));
 
-app.use(function(req, res, next){
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  next();
-})
+// app.use(function(req, res, next){
+//   res.header('Access-Control-Allow-Origin', '*');
+//   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+//   res.header('Access-Control-Allow-Headers', 'Content-Type');
+//   next();
+// })
 
 app.use('/', index);
 app.use('/users', users);
