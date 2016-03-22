@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override')
-var db = require('monk')('localhost/deoxy');
+var db = require('monk')(process.env.MONGO_URI || 'localhost/deoxy');
 var genes = db.get('genes');
 
 var index = require('./routes/index');
