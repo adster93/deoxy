@@ -1,4 +1,5 @@
 var express = require('express');
+var app = express();
 var url = require('url');
 var router = express.Router();
 var db = require('monk')(process.env.MONGO_URI || 'localhost/deoxy');
@@ -9,6 +10,7 @@ genes.index("name")
 
 
 /* GET home page. */
+
 
 router.get('/api', function(req,res){
 	genes.find({}, function (err, docs){
