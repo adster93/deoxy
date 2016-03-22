@@ -1,7 +1,7 @@
 //grab from server name information
 
 var sampleId = location.search.split("=")[1]
-d3.json("https://localhost:3000/api/sample/" + sampleId, function(error, data) {
+d3.json("http://localhost:3000/api/sample/" + sampleId, function(error, data) {
       var variantData = data[0].variants
       console.log(data)
       var patientDescription = []
