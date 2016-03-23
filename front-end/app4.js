@@ -1,5 +1,5 @@
 
-d3.json("http://localhost:3000/api/males", function(error, root) {
+d3.json("http://localhost:3000/api/malestats", function(error, root) {
   var result = [];
   data = root.reduce(function(result, person) {
     // console.log(person)
@@ -16,8 +16,20 @@ d3.json("http://localhost:3000/api/males", function(error, root) {
                 size: data[name]
                })
             }
-  console.log(result)
-
+  function findSize(result){
+    var totalSize = 0
+    for (var i = 0; i<=result.length-1; i++) {
+      if(!result[i].size){
+        totalSize = totalSize + 0;
+      }
+      else {
+        totalSize = totalSize + result[i].size;
+      }
+    // result[i].size
+  }
+    return totalSize
+  }
+findSize(result)
 // var newNest = d3.nest()
 // .data(data)
 // .key(function(d){return
@@ -58,7 +70,8 @@ var margin = {top: 50, right: 50, bottom: 50, left: 50},
         d3.select("#nodeInfo")
         .append("text")
         .text(function(){
-          return d.size
+          totalSize = findSize(result)
+          return (Math.floor((d.size/totalSize) * 100)) + '%'
         })
        })
        .call(force.drag);
@@ -67,7 +80,9 @@ var margin = {top: 50, right: 50, bottom: 50, left: 50},
       .data(nodes)
       .enter().append("svg:text")
       .style("font-size", "24px")
-      .text(function(d) { return d.name; })
+      .text(function(d) { 
+        findSize(result)
+        return d.name; })
       .style("fill", "gray")
 
      
