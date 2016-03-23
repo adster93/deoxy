@@ -277,12 +277,7 @@ var data2 = [{
 //         })
         
 //     })
-// $(".preventScroll").click(function(e){
-//         e.preventDefault();
-        
-
-//         return false;
-//     });
+// 
 
 var svg = d3.select("#svg3454");
 var geneSummary = svg.selectAll("g")
@@ -311,11 +306,11 @@ var geneSummary = svg.selectAll("g")
     class: "gene"
 }).style("fill", function(d) {
     if (d.clinicalImportance == "Low") {
-        return "#00FF19"
+         return "#01FF70"
     } else if (d.clinicalImportance == "Moderate") {
-        return "yellow"
+        return "#FFF35E"
     } else if (d.clinicalImportance == "High") {
-        return "red"
+        return "#FF4136"
     }
 }).style("opacity", .5).on('mouseover', function(d) {
     var nodeSelection = d3.select(this).style({
@@ -333,11 +328,11 @@ var geneSummary = svg.selectAll("g")
             .text(function(){return d.summary})
             .style("color", function() {
     if (d.clinicalImportance == "Low") {
-        return "#00FF19"
+        return "#01FF70"
     } else if (d.clinicalImportance == "Moderate") {
-        return "yellow"
+        return "#FFF35E"
     } else if (d.clinicalImportance == "High") {
-        return "#FF0006"
+        return "#FF4136"
     }
     })
 })

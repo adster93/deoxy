@@ -42,13 +42,19 @@ router.get('/api/sample/:names', function(req, res, next){
 	// })
 })
 
-router.get('/api/males', function(req, res, next){
+router.get('/api/malestats', function(req, res, next){
 	genes.find({sex: "Male"}, function(err, docs){
 		res.json(docs)
 		
 	})
 })
 
+
+router.get('/api/femalestats', function(req, res, next){
+	genes.find({sex: "Female"}, function(err, docs){
+		res.json(docs)
+	})
+})
 
 //Get data from names and render new svg based on searched
 //name

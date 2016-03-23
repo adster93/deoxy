@@ -50,11 +50,11 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/sample/" + sampleId, function
     }
 }).style("fill", function(d, i) {
     if (d.importance == "Low") {
-        return "#00FF19"
+        return "#01FF70"
     } else if (d.importance == "Moderate") {
-        return "yellow"
+        return "#FFDD70"
     } else if (d.importance == "High")  {
-        return "#FF0006"
+        return "#FF4136"
     }
 
     }).style("opacity", .5).on('mouseover', function(d) {

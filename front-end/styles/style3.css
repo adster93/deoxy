@@ -28,6 +28,17 @@ nav {
   -webkit-box-shadow: 0 0 18px #7AFFE2;
   color: black; }
 
+.helpBox {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 7px;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
+  margin-left: 50px;
+  margin-bottom: 100px; }
+
 body {
   background-color: black; }
 

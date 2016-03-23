@@ -1,11 +1,15 @@
 
 d3.json("http://localhost:3000/api/malestats", function(error, root) {
   var result = [];
+  var summaries = {};
+  var importance = {};
   data = root.reduce(function(result, person) {
     // console.log(person)
   person.variants.forEach(function(variant) {
     result[variant.name] = result[variant.name] || 0
     result[variant.name] = result[variant.name] + 1 
+    summaries[variant.name] = variant.summary
+    importance[variant.name] = variant.importance
   })
   return result
 }, {})
@@ -13,7 +17,10 @@ d3.json("http://localhost:3000/api/malestats", function(error, root) {
   for(name in data){
     result.push({
                 name: name,
-                size: data[name]
+                size: data[name],
+                summary: summaries[name],
+                importance: importance[name]
+
                })
             }
   function findSize(result){
@@ -64,14 +71,22 @@ var margin = {top: 50, right: 50, bottom: 50, left: 50},
        .attr("r", function(d){
         return d.size
        })
-       .style("fill", "#48D5FF" )
+       .style("fill", function(d){
+        if (d.importance == "Low") {
+        return "#01FF70"
+    } else if (d.importance == "Moderate") {
+        return "#FFDD70"
+    } else if (d.importance == "High")  {
+        return "#FF4136"
+    }
+       } )
        .on("click", function(d){
         d3.selectAll("#nodeInfo > text").remove()
         d3.select("#nodeInfo")
         .append("text")
         .text(function(){
           totalSize = findSize(result)
-          return (Math.floor((d.size/totalSize) * 100)) + '%'
+          return d.summary + "<br>" + (Math.round((d.size/totalSize) * 100)) + '%'
         })
        })
        .call(force.drag);
