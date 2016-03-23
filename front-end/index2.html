@@ -14,9 +14,12 @@
   <meta charset="UTF-8">
   <title></title>
 </head>
+<nav>
+  <button type="button" class="navButtons">About</button>
+</nav>
 <body>
 <div class="helpBox">
-  click a gene on the <span id="dnaTag">dna</span> for more info
+  below is a sample of <span id="dnaTag">dna</span>. each color represents a variant in the gene with different severity (red for high, yellow for moderate and green for low). click a gene on the <span id="dnaTag">dna</span> for more info.
 </div>
 <div class="svgGeneContainer">
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -530,7 +533,9 @@
 </svg>
 <div class="variantSummary">
 </div>
-<a href="index4.html"><button type="button" class="buttonPulse">View More Samples</button></a>
+</div>
+<div class="viewMoreSamples">
+<a href="index4.html"><button type="button" class="buttonPulse">View Real Samples</button></a>
 </div>
 
 <!-- <object data="dnasvg.svg" type="image/svg+xml">

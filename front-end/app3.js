@@ -1,4 +1,4 @@
-d3.json('https://pure-cove-57024.herokuapp.com/api/samples', function(err, data){
+d3.json('http://localhost:3000/api/samples', function(err, data){
   d3.select('.namesContainer')
   .data(data)
   .enter()

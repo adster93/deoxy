@@ -2,13 +2,45 @@ body {
 	background-color: black;
 }
 
+nav {
+	// border-bottom: 2px solid white;
+	padding: 15px;
+	text-align: right;
+}
+
+@-webkit-keyframes navPulse {
+  from { background-color: black; -webkit-box-shadow: 0 0 0 #333; }
+  to { background-color: white; -webkit-box-shadow: 0 0 18px #91bd09; }
+}
+
+.navButtons {
+  background-color: black;
+  color: white;
+  height: 90px;
+  width: 180px;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  border: 3px solid #7AFFE2;
+  letter-spacing: 5px;
+  font-size: 28px;
+}
+
+.navButtons:hover {
+  -webkit-animation-name: navPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-box-shadow: 0 0 18px #7AFFE2;
+  color: black;
+}
+
 .helpBox {
 	color: white;
 	font-size: 2em;
 	letter-spacing: 7px;
-	margin-top: 30px;
-	margin-left: 135px;
 	text-align: center;
+	padding-top: 180px;
+	padding-left: 400px;
+	padding-right: 400px;
 }
 
 #dnaTag {
@@ -17,17 +49,19 @@ body {
 
 .svgGeneContainer {
 	display: flex;
+	justify-content: center;
 }
 
 .variantSummary {
 
 	height: 900px;
-	width: 600px;
+	width: 730px;
 	font-size: 2em;
 	margin-top: 80px;
 	border: 2px solid #5FF7FA;
 	padding: 20px;
-	opacity: 0;
+	opacity: .1;
+
 }
 
 
@@ -108,7 +142,6 @@ transform: translate(700px, -45px)
 	width: 300px;
 	background-color: black;
 	border: 2px solid #7AFFE2;
-
 }
 
 .startNow:hover {
@@ -133,12 +166,13 @@ transform: translate(700px, -45px)
   border: 3px solid #7AFFE2;
   letter-spacing: 8px;
   font-size: 28px;
-  margin: auto;
+  margin-left: 240px;
+  margin-bottom: 150px;
 }
 
 .buttonPulse:hover {
   -webkit-animation-name: startPulse;
-  -webkit-animation-duration: 6s;
+  -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 2;
   -webkit-box-shadow: 0 0 18px #7AFFE2;
   color: black;
@@ -147,3 +181,8 @@ transform: translate(700px, -45px)
 .buttonPulse:focus{
 	display: none;
 }
+
+.viewMoreSamples {
+	display: flex;
+	justify-content: center;
+	}

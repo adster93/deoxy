@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="/styles/style3.css">
-<script type="text/javascript" src="app3.js"></script>
-<link rel="stylesheet" type="text/css" href="styles/style4.css">
+<link rel="stylesheet" type="text/css" href="styles/style5.css">
 
   <meta charset="UTF-8">
   <meta charset="UTF-8">
   <title></title>
 </head>
-<nav>
-  <button type="button" class="navButtons">About</button>
-</nav>
-<div class="helpBox">
-  below are real human genomes donated from the public genome project. each participant provides vital medical information about their gene variants, ranging from variants in highly pathogenic genes to benign genes.
-</div>
+
+<style>
+
+/* circle {
+  stroke: #000;
+  fill-opacity: .1;
+} */
+
+</style>
 <body>
-<div class="namesContainer">
-<!-- <form  method="post" action="http://localhost:3000/api/names" >
-    <input type="text" name="geneName">
-    <input id="contactForm" type="submit">
-</form> -->
-	
-	
+<div class="svgContainer">
+<!-- <svg id="statSvg"width="1000" height="1000">
+ 
+</svg> -->
 </div>
+<div id='chart'></div>
+<div id="nodeInfo"></div>
+<script type="text/javascript" src="app4.js"></script>
 </body>
+
 </html>

@@ -20,7 +20,7 @@ router.get('/api', function(req,res){
 
 
 router.get('/api/samples', function(req,res){
-	genes.find({}, "name", function(err ,docs){
+	genes.find({}, "name", function(err,docs){
 		res.json(docs)
 	})
 })
@@ -40,6 +40,13 @@ router.get('/api/sample/:names', function(req, res, next){
 	// 			res.json(docs)
 	// 		}
 	// })
+})
+
+router.get('/api/males', function(req, res, next){
+	genes.find({sex: "Male"}, function(err, docs){
+		res.json(docs)
+		
+	})
 })
 
 

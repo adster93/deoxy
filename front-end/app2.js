@@ -32,7 +32,7 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/sample/" + sampleId, function
           return 370
         }
         else {
-          return (36-i) * 20 + 220
+          return (36-i) * 20 + 280
         }
     },
     cy: function(d, i) {
@@ -71,16 +71,7 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/sample/" + sampleId, function
         d3.select(".variantSummary")
             .style("opacity", "1")
             .text(function(){return d.summary})
-            .style("color", function() {
-    if (d.importance == "Low") {
-        return "#00FF19"
-    } else if (d.importance == "Moderate") {
-        return "yellow"
-    } else if (d.importance == "High") {
-        return "#FF0006"
-    }
-    })
-
+            .style("color", "white")
             d3.select(".variantSummary2")
             .selectAll("text")
             .data(patientDescription)
@@ -88,16 +79,19 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/sample/" + sampleId, function
             .append("div")
             .style("opacity", "1")
             .text(function(d){return d})
-            .style("color", function() {
-    if (d.importance == "Low") {
-        return "#00FF19"
-    } else if (d.importance == "Moderate") {
-        return "yellow"
-    } else if (d.importance == "High") {
-        return "#FF0006"
-    }
-    })
+            .style("color", "white")
 
 
 })
 })
+
+// function() {
+//     if (d.importance == "Low") {
+//         return "#00FF19"
+//     } else if (d.importance == "Moderate") {
+//         return "yellow"
+//     } else if (d.importance == "High") {
+//         return "#FF0006"
+//     }
+//     })
+

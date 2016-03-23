@@ -277,6 +277,13 @@ var data2 = [{
 //         })
         
 //     })
+// $(".preventScroll").click(function(e){
+//         e.preventDefault();
+        
+
+//         return false;
+//     });
+
 var svg = d3.select("#svg3454");
 var geneSummary = svg.selectAll("g")
     .data(data2)
