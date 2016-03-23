@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="styles/style1.css">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="styles/about.css">
+</head>
+<nav>
+	<a href="index.html"><button type="button" class="navButtons">Home</button></a>
+</nav>
+<body>
+
+<p>
+This app is built off of the human genome project. Reports mostly from 23andMe that were submitted to the public genome and I scraped the data with a custom scraper.
+
+The original site had very low loading speeds because it was running on an outdated web framework. I thought this would be a great time to put my Biology degree and software development skills to the test on this two week project endeavor.
+
+Using the scraped data, I used SVGs and D3 to display this data in an aesthetic and interactive way. The data can and will be constantly updated as long as the public genome project database continutes to update as well. All that is needed is to create a mongodb, create a database named deoxy with a collection called genes, and run the scraper with node genome_scrape.js.
+
+Enjoy!
+</p>
+</body>
+</html>

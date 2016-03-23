@@ -1,0 +1,12 @@
+body {
+	background-color: black;
+	text-align: center;
+
+}
+
+p {
+	font-size: 28px;
+	letter-spacing: 7px;
+	color: white;
+	padding: 400px;
+}
