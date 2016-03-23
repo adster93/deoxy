@@ -13,16 +13,17 @@ nav {
   to { background-color: white; -webkit-box-shadow: 0 0 18px #91bd09; }
 }
 
+
 .navButtons {
   background-color: black;
   color: white;
-  height: 90px;
-  width: 180px;
+  height: 80px;
+  width: 160px;
   border-radius: 0.5em;
   padding: 0.5em;
   border: 3px solid #7AFFE2;
   letter-spacing: 5px;
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .navButtons:hover {
@@ -38,9 +39,10 @@ nav {
 	font-size: 2em;
 	letter-spacing: 7px;
 	text-align: center;
-	padding-top: 180px;
-	padding-left: 400px;
-	padding-right: 400px;
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+	margin-left: 50px
 }
 
 #dnaTag {
@@ -183,6 +185,7 @@ transform: translate(700px, -45px)
 }
 
 .viewMoreSamples {
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	margin-top: 50px;
+	margin-right: 200px;
 	}
