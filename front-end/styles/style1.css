@@ -1,5 +1,6 @@
 body {
-  background-color: black; }
+  background-color: black;
+  font-family: Josefin; }
 
 nav {
   padding: 15px;
@@ -35,6 +36,7 @@ nav {
   text-align: center; }
 
 h1 {
+  font-family: Josefin;
   font-size: 100px;
   color: white;
   text-shadow: 0 0 30px #7AFFE2;
@@ -66,6 +68,7 @@ h3 {
   text-align: center; }
 
 .startNow {
+  font-family: Josefin;
   font-size: 28px;
   color: white;
   height: 130px;
@@ -84,6 +87,7 @@ h3 {
     background-color: white;
     -webkit-box-shadow: 0 0 18px #91bd09; } }
 .buttonPulse {
+  font-family: Josefin;
   background-color: black;
   color: white;
   height: 120px;
