@@ -1,6 +1,8 @@
 //grab from server name information
 
 var sampleId = location.search.split("=")[1]
+// localhost:8081/api/samples
+// https://pure-cove-57024.herokuapp.com/api/sample/
 d3.json("https://pure-cove-57024.herokuapp.com/api/sample/" + sampleId, function(error, data) {
       var variantData = data[0].variants
       console.log(data)
@@ -80,8 +82,6 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/sample/" + sampleId, function
             .style("opacity", "1")
             .text(function(d){return d})
             .style("color", "white")
-
-
 })
 })
 

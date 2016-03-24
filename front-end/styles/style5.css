@@ -1,6 +1,18 @@
 body {
-  background-color: white;
-  font: 20px sans-serif; }
+  background-color: black;
+  font: 20px sans-serif;
+  text-align: center; }
+
+.helpBox {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 7px;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
+  margin-left: 50px;
+  margin-bottom: 100px; }
 
 .axis path,
 .axis line {
@@ -17,9 +29,22 @@ body {
   stroke-width: 1.5px; }
 
 #nodeInfo {
+  margin: auto;
+  color: white;
   border: 2px solid black;
-  font-size: 24px;
+  font-size: 38px;
   height: 300px;
-  width: 400px; }
+  width: 3000px;
+  text-align: center; }
+
+.sexButtons {
+  font-size: 38px;
+  color: white;
+  height: 130px;
+  width: 300px;
+  background-color: black;
+  border: 2px solid #7AFFE2;
+  margin-left: 200px;
+  padding-top: 35px; }
 
 /*# sourceMappingURL=style5.css.map */
