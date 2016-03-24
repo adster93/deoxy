@@ -35,16 +35,12 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/" + sex + "stats", function(e
                 } else {
                     totalSize = totalSize + result[i].size;
                 }
-                // result[i].size
             }
             return totalSize
         }
         findSize(result)
-            // var newNest = d3.nest()
-            // .data(data)
-            // .key(function(d){return
+
         var nodes = result
-            // [{techName: 'USB'}, {techName: 'HDMI'}, {techName: 'DVI'}, {techName: 'VGA'}]; 
         var margin = {
                 top: 50,
                 right: 50,
@@ -79,12 +75,16 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/" + sex + "stats", function(e
               
             })
         }).call(force.drag);
-        var text = svg.selectAll('text').data(nodes).enter().append("svg:text").style("font-size", "28px").text(function(d) {
+        var text = svg.selectAll('text')
+        .data(nodes)
+        .enter()
+        .append("svg:text")
+        .style("font-size", "28px").text(function(d) {
             findSize(result)
             return d.name;
         }).style("fill", "white")
         .style("stroke", "black")
-        .style("stroke-width", "1.5px")
+        .style("stroke-width", "1.2px")
         force.on("tick", function() {
             text.attr("x", function(d) {
                 return d.x + 6;
@@ -98,124 +98,4 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/" + sex + "stats", function(e
             });
         });
     })
-    // var newNest= d3.nest()
-    // .key(function(d){return d})
-    // .entries(result)
-    // newNest[0].key = "children"
-    // console.log(newNest)
-    // var stuff = {
-    //   children: [
-    //     {"name": "bob", value: 1.94},
-    //     {"name": "jimmy", value: 0.42},
-    //     {value: 0},
-    //     {value: 3.95},
-    //     {value: 0.06},
-    //     {value: 0.91},
-    //     {value: 5},
-    //     {value: .8},
-    //     {value: .2},
-    //     {value: .1}
-    //   ]
-    // };
-    // console.log(stuff)
-    //   var width = 960,
-    //     height = 500;
-    // var pack = d3.layout.pack()
-    //     .sort(d3.descending)
-    //     .size([width, height]);
-    // var svg = d3.select("body").append("svg")
-    //     .attr("width", width)
-    //     .attr("height", height);
-    // svg.data([stuff]).selectAll(".node")
-    //     .data(pack.nodes)
-    //   .enter().append("circle")
-    //     .attr("class", "node")
-    //     .style("fill", "red")
-    //     .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-    //     .attr("r", function(d) { return d.r; })
-    // })
-    //   var svg = d3.select("#statSvg")
-    //   var stats = svg.selectAll("g")
-    //     .data(result)
-    //     .enter()
-    //     .append("g")
-    //     .attr("transform", function(d, i) { return "translate(100,100)"; });
-    //     stats.append("circle")
-    //     .attr({
-    //     r: function(d){
-    //       return d.size * 1
-    //       console.log(d.name)
-    //       console.log(d)
-    //       var count
-    //       if (d.variants[i].importance == "Low") {
-    //         return "#00FF19"
-    //     } else if (d.variants[i].importance == "Moderate") {
-    //         return "yellow"
-    //     } else if (d.variants[i].importance == "High") {
-    //         return "red"
-    //     },
-    //     cx: function(d, i) {
-    //          {
-    //           if(d.size > 5)
-    //           return i * 30
-    //         }
-    //     },
-    //     cy: function(d, i) {
-    //         if(d.size > 5){
-    //           return i * 0 + 500
-    //         }
-    //         if(i > )
-    //     }
-    // })
-    // })
-    // d3.json("http://localhost:3000/api/males", function(error, data){
-    //   console.log(data)
-    //   var svg = d3.select(".svgContainer");
-    //   var geneSummary = svg.selectAll("g")
-    //     .data(data)
-    //     .enter()
-    //     .append("g")
-    //     .attr("transform", function(d, i) { return "translate(100,100)"; });
-    //   geneSummary.append("circle")
-    //     .attr({
-    //     r: 12,
-    //     cx: function(d, i) {
-    //          {
-    //           return i * 30
-    //         }
-    //     },
-    //     cy: function(d, i) {
-    //         return i * 30
-    //     }
-    // }).style("fill", function(d) {
-    //     if (d.clinicalImportance == "Low") {
-    //         return "#00FF19"
-    //     } else if (d.clinicalImportance == "Moderate") {
-    //         return "yellow"
-    //     } else if (d.clinicalImportance == "High") {
-    //         return "red"
-    //     }
-    // }).style("opacity", .5).on('mouseover', function(d) {
-    //     var nodeSelection = d3.select(this).style({
-    //         opacity: '1'
-    //     }).on('mouseout', function(d){
-    //         var nodeSelection = d3.select(this).style({
-    //             opacity: '.5'
-    //         })
-    //     });
-    // }).on("click",function(d){
-    //         console.log(d)
-    //         d3.select(".variantSummary")
-    //             .style("opacity", "1")
-    //             .text(function(){return d.summary})
-    //             .style("color", function() {
-    //     if (d.clinicalImportance == "Low") {
-    //         return "#00FF19"
-    //     } else if (d.clinicalImportance == "Moderate") {
-    //         return "yellow"
-    //     } else if (d.clinicalImportance == "High") {
-    //         return "#FF0006"
-    //     }
-    //     })
-    // })
-    // })
+   

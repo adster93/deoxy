@@ -72,7 +72,7 @@ d3.json("https://pure-cove-57024.herokuapp.com/api/sample/" + sampleId, function
         d3.selectAll(".variantSummary2 > div").remove()
         d3.select(".variantSummary")
             .style("opacity", "1")
-            .text(function(){return d.summary})
+            .text(function(){return d.name + ' :' + ' ' + d.summary})
             .style("color", "white")
             d3.select(".variantSummary2")
             .selectAll("text")

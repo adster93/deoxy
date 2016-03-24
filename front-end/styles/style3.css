@@ -1,7 +1,8 @@
 nav {
   margin-top: 30px;
   margin-bottom: 100px;
-  text-align: right; }
+  text-align: right;
+  font-family: Josefin; }
 
 @-webkit-keyframes navPulse {
   from {
@@ -29,6 +30,7 @@ nav {
   color: black; }
 
 .helpBox {
+  font-family: Josefin;
   color: white;
   font-size: 2em;
   letter-spacing: 7px;
@@ -39,8 +41,12 @@ nav {
   margin-left: 50px;
   margin-bottom: 100px; }
 
+#dnaTag {
+  color: #5FF7FA; }
+
 body {
-  background-color: black; }
+  background-color: black;
+  font-family: Josefin; }
 
 .mainContainer {
   display: flex;
@@ -51,6 +57,7 @@ body {
   justify-content: flex-start; }
 
 .variantSummary {
+  font-family: Josefin;
   height: 750px;
   width: 765px;
   font-size: 2em;
@@ -61,6 +68,7 @@ body {
   margin-left: 100px; }
 
 .variantSummary2 {
+  font-family: Josefin;
   color: white;
   margin-top: 80px;
   font-size: 2em; }

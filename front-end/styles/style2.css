@@ -1,5 +1,6 @@
 body {
-  background-color: black; }
+  background-color: black;
+  font-family: Josefin; }
 
 nav {
   padding: 15px;
@@ -48,6 +49,7 @@ nav {
   justify-content: center; }
 
 .variantSummary {
+  font-family: Josefin;
   height: 900px;
   width: 730px;
   font-size: 2em;
@@ -63,26 +65,6 @@ svg {
 #svg3454 {
   background-color: black; }
 
-#layer1 {
-  perspective: 600px; }
-
-.firstStrand {
-  transform: translate(700px, -45px) rotate(97deg) scale(2, 2);
-  -webkit-animation: rotation 3s infinite linear; }
-
-.secondStrand {
-  transform: translate(200px, 800px) rotate(-85deg) scale(2, 2); }
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotateY(0deg); }
-  to {
-    -webkit-transform: rotateY(30deg); } }
-@-webkit-keyframes spinner {
-  from {
-    -webkit-transform: scale(2, 2) rotateX(0deg); }
-  to {
-    -webkit-transform: scale(2, 2) rotateX(360deg); } }
 .white {
   color: white; }
 
@@ -133,7 +115,7 @@ svg {
 
 .viewMoreSamples {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-right: 200px; }
 
 /*# sourceMappingURL=style2.css.map */
